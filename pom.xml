@@ -8,7 +8,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>io.github.zahran444</groupId>
   <artifactId>colorado-booth-sdk</artifactId>
-  <version>1.0.5</version>
+  <version>1.0.6</version>
   <packaging>jar</packaging>
   <name>Colorado Booth SDK</name>
   <description>test</description>
