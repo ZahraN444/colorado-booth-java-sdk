@@ -13,12 +13,12 @@ Install the SDK by adding the following dependency in your project's pom.xml fil
 <dependency>
   <groupId>io.github.zahran444</groupId>
   <artifactId>colorado-booth-sdk</artifactId>
-  <version>1.0.6</version>
+  <version>1.0.7</version>
 </dependency>
 ```
 
 You can also view the package at:
-https://central.sonatype.com/artifact/io.github.zahran444/colorado-booth-sdk/1.0.6
+https://central.sonatype.com/artifact/io.github.zahran444/colorado-booth-sdk/1.0.7
 
 ## Test the SDK
 
@@ -32,7 +32,7 @@ In Eclipse, for running the tests do the following:
 
 ## Initialize the API Client
 
-**_Note:_** Documentation for the client can be found [here.](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.6/doc/client.md)
+**_Note:_** Documentation for the client can be found [here.](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.7/doc/client.md)
 
 The following parameters are configurable for the API Client:
 
@@ -41,15 +41,15 @@ The following parameters are configurable for the API Client:
 | accessToken2 | `String` |  |
 | port | `String` | *Default*: `"80"` |
 | suites | `SuiteCodeEnum` | *Default*: `SuiteCodeEnum.HEARTS` |
-| environment | [`Environment`](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.6/README.md#environments) | The API environment. <br> **Default: `Environment.TESTING`** |
-| httpClientConfig | [`Consumer<HttpClientConfiguration.Builder>`](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.6/doc/http-client-configuration-builder.md) | Set up Http Client Configuration instance. |
-| basicAuthCredentials | [`BasicAuthCredentials`](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.6/doc/auth/basic-authentication.md) | The Credentials Setter for Basic Authentication |
-| apiKeyCredentials | [`ApiKeyCredentials`](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.6/doc/auth/custom-query-parameter.md) | The Credentials Setter for Custom Query Parameter |
-| apiHeaderCredentials | [`ApiHeaderCredentials`](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.6/doc/auth/custom-header-signature.md) | The Credentials Setter for Custom Header Signature |
-| oAuthCCGCredentials | [`OAuthCCGCredentials`](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.6/doc/auth/oauth-2-client-credentials-grant.md) | The Credentials Setter for OAuth 2 Client Credentials Grant |
-| oAuthACGCredentials | [`OAuthACGCredentials`](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.6/doc/auth/oauth-2-authorization-code-grant.md) | The Credentials Setter for OAuth 2 Authorization Code Grant |
-| oAuthROPCGCredentials | [`OAuthROPCGCredentials`](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.6/doc/auth/oauth-2-resource-owner-credentials-grant.md) | The Credentials Setter for OAuth 2 Resource Owner Credentials Grant |
-| oAuthBearerTokenCredentials | [`OAuthBearerTokenCredentials`](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.6/doc/auth/oauth-2-bearer-token.md) | The Credentials Setter for OAuth 2 Bearer token |
+| environment | [`Environment`](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.7/README.md#environments) | The API environment. <br> **Default: `Environment.TESTING`** |
+| httpClientConfig | [`Consumer<HttpClientConfiguration.Builder>`](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.7/doc/http-client-configuration-builder.md) | Set up Http Client Configuration instance. |
+| basicAuthCredentials | [`BasicAuthCredentials`](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.7/doc/auth/basic-authentication.md) | The Credentials Setter for Basic Authentication |
+| apiKeyCredentials | [`ApiKeyCredentials`](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.7/doc/auth/custom-query-parameter.md) | The Credentials Setter for Custom Query Parameter |
+| apiHeaderCredentials | [`ApiHeaderCredentials`](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.7/doc/auth/custom-header-signature.md) | The Credentials Setter for Custom Header Signature |
+| oAuthCCGCredentials | [`OAuthCCGCredentials`](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.7/doc/auth/oauth-2-client-credentials-grant.md) | The Credentials Setter for OAuth 2 Client Credentials Grant |
+| oAuthACGCredentials | [`OAuthACGCredentials`](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.7/doc/auth/oauth-2-authorization-code-grant.md) | The Credentials Setter for OAuth 2 Authorization Code Grant |
+| oAuthROPCGCredentials | [`OAuthROPCGCredentials`](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.7/doc/auth/oauth-2-resource-owner-credentials-grant.md) | The Credentials Setter for OAuth 2 Resource Owner Credentials Grant |
+| oAuthBearerTokenCredentials | [`OAuthBearerTokenCredentials`](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.7/doc/auth/oauth-2-bearer-token.md) | The Credentials Setter for OAuth 2 Bearer token |
 
 The API client can be initialized as follows:
 
@@ -140,42 +140,42 @@ The SDK can be configured to use a different environment for making API calls. A
 
 This API uses the following authentication schemes.
 
-* [`basicAuth (Basic Authentication)`](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.6/doc/auth/basic-authentication.md)
-* [`apiKey (Custom Query Parameter)`](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.6/doc/auth/custom-query-parameter.md)
-* [`apiHeader (Custom Header Signature)`](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.6/doc/auth/custom-header-signature.md)
-* [`OAuthCCG (OAuth 2 Client Credentials Grant)`](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.6/doc/auth/oauth-2-client-credentials-grant.md)
-* [`OAuthACG (OAuth 2 Authorization Code Grant)`](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.6/doc/auth/oauth-2-authorization-code-grant.md)
-* [`OAuthROPCG (OAuth 2 Resource Owner Credentials Grant)`](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.6/doc/auth/oauth-2-resource-owner-credentials-grant.md)
-* [`OAuthBearerToken (OAuth 2 Bearer token)`](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.6/doc/auth/oauth-2-bearer-token.md)
+* [`basicAuth (Basic Authentication)`](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.7/doc/auth/basic-authentication.md)
+* [`apiKey (Custom Query Parameter)`](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.7/doc/auth/custom-query-parameter.md)
+* [`apiHeader (Custom Header Signature)`](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.7/doc/auth/custom-header-signature.md)
+* [`OAuthCCG (OAuth 2 Client Credentials Grant)`](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.7/doc/auth/oauth-2-client-credentials-grant.md)
+* [`OAuthACG (OAuth 2 Authorization Code Grant)`](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.7/doc/auth/oauth-2-authorization-code-grant.md)
+* [`OAuthROPCG (OAuth 2 Resource Owner Credentials Grant)`](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.7/doc/auth/oauth-2-resource-owner-credentials-grant.md)
+* [`OAuthBearerToken (OAuth 2 Bearer token)`](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.7/doc/auth/oauth-2-bearer-token.md)
 * `CustomAuth (Custom Authentication)`
 
 ## List of APIs
 
-* [Authentication](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.6/doc/controllers/authentication.md)
+* [Authentication](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.7/doc/controllers/authentication.md)
 
 ## SDK Infrastructure
 
 ### Configuration
 
-* [Configuration Interface](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.6/doc/configuration-interface.md)
-* [HttpClientConfiguration](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.6/doc/http-client-configuration.md)
-* [HttpClientConfiguration.Builder](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.6/doc/http-client-configuration-builder.md)
-* [HttpProxyConfiguration](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.6/doc/http-proxy-configuration.md)
-* [HttpProxyConfiguration.Builder](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.6/doc/http-proxy-configuration-builder.md)
+* [Configuration Interface](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.7/doc/configuration-interface.md)
+* [HttpClientConfiguration](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.7/doc/http-client-configuration.md)
+* [HttpClientConfiguration.Builder](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.7/doc/http-client-configuration-builder.md)
+* [HttpProxyConfiguration](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.7/doc/http-proxy-configuration.md)
+* [HttpProxyConfiguration.Builder](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.7/doc/http-proxy-configuration-builder.md)
 
 ### HTTP
 
-* [Headers](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.6/doc/headers.md)
-* [HttpCallback Interface](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.6/doc/http-callback-interface.md)
-* [HttpContext](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.6/doc/http-context.md)
-* [HttpBodyRequest](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.6/doc/http-body-request.md)
-* [HttpRequest](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.6/doc/http-request.md)
-* [HttpResponse](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.6/doc/http-response.md)
-* [HttpStringResponse](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.6/doc/http-string-response.md)
+* [Headers](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.7/doc/headers.md)
+* [HttpCallback Interface](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.7/doc/http-callback-interface.md)
+* [HttpContext](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.7/doc/http-context.md)
+* [HttpBodyRequest](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.7/doc/http-body-request.md)
+* [HttpRequest](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.7/doc/http-request.md)
+* [HttpResponse](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.7/doc/http-response.md)
+* [HttpStringResponse](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.7/doc/http-string-response.md)
 
 ### Utilities
 
-* [ApiException](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.6/doc/api-exception.md)
-* [ApiHelper](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.6/doc/api-helper.md)
-* [FileWrapper](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.6/doc/file-wrapper.md)
+* [ApiException](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.7/doc/api-exception.md)
+* [ApiHelper](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.7/doc/api-helper.md)
+* [FileWrapper](https://www.github.com/ZahraN444/colorado-booth-java-sdk/tree/1.0.7/doc/file-wrapper.md)
 
